@@ -133,18 +133,6 @@ body::after{
     color: #000;
 }
 
-.container .convert-box .reverse{
-    cursor: pointer;
-    margin-top: 32px;
-    font-size: 22px;
-    transform: rotate(90deg);
-    transition: all 0.3s ease;
-}
-
-.container .convert-box .reverse:hover{
-    color: #675afe;
-}
-
 .container form .result{
     font-size: 1.1rem;
     margin: 20px 0 30px;
