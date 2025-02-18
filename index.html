@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Conversor de moeda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Conversor de moeda</h2>
+        <form>
+            <div class="amount">
+                <p>Valor</p>
+                <input type="text" value="0" id="valueCurrency">
+            </div>
+            <div class="convert-box">
+                <div class="from">
+                    <p>De</p>
+                    <div class="select-input">
+                        <img id="flag1" src="">
+                        <select id="selectcoin1"></select>
+                    </div>
+                </div>
+                <div class="reverse"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>Para</p>
+                    <div class="select-input">
+                        <img id="flag2" src="">
+                        <select id="selectcoin2"></select>
+                    </div>
+                </div>
+                <div class="result">Digite um valor</div>
+                <button id="exchange" type="button">Converter</button>
+
+            </div>
+        </form>
+    </div>
+
+
+    <!-- <header class="header">
+        <h1>Conversor de moedas</h1>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <select name="selectmoeda" id="idselectmoeda0">
+                </select>
+                <input type="number" name="inputvalor" id="idinputvalor">
+                <select name="selectmoeda" id="idselectmoeda1">
+                </select>
+                <input type="button" value="Converter" id="converter" onclick="Converter()">
+            </div>
+            <div id="res"></div>
+            <div>
+                <input type="button" value="Remover Histórico" onclick="Reset()">
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <p>© Daniel Baumann</p>
+    </footer> -->
+
+    <script src="engine.js"></script>
+</body>
+</html>
