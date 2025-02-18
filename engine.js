@@ -2,6 +2,7 @@ const fieldValueCurrency = document.querySelector('#valueCurrency')
 const btnExchange = document.querySelector('#exchange')
 const option1 = document.querySelector('#selectcoin1')
 const option2 = document.querySelector('#selectcoin2')
+const btnReverse = document.querySelector('.reverse');
 const exchangeResult = document.querySelector('.result')
 const flag1 = document.querySelector('#flag1')
 const flag2 = document.querySelector('#flag2')
@@ -93,3 +94,15 @@ function updateFlag(select, flagElement) {
         }
     })
 })()
+
+function swapCurrencies() {
+    [valueopt1, valueopt2] = [valueopt2, valueopt1];
+
+    option1.value = valueopt1;
+    option2.value = valueopt2;
+
+    updateFlag(option1, flag1);
+    updateFlag(option2, flag2);
+}
+
+btnReverse.addEventListener('click', swapCurrencies);
